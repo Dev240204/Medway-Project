@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!--
+Template Name: Tinker - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en" class="light">
+<!-- BEGIN: Head -->
+
+<!-- Mirrored from tinker-html.vercel.app/side-menu-light-calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Sep 2023 19:06:39 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="/static/dist/images/logo.svg" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Tinker admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Tinker Admin Template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <title>Calendar - Midone - Tailwind HTML Admin Template</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="/static/dist/css/app.css" />
+    <link rel="stylesheet" href="/static/assets/css/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="py-5 md:py-0 bg-black/[0.15] dark:bg-transparent">
+    <!-- BEGIN: Mobile Menu -->
+    {% include 'includes/receptionist-sidebar-sm.html' %}
+    <!-- END: Mobile Menu -->
+    <div class="flex mt-[4.7rem] md:mt-0 overflow-hidden">
+        <!-- BEGIN: Side Menu -->
+        {% include 'includes/receptionist-sidebar-lg.html' %}
+        <!-- END: Side Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+            <!-- BEGIN: Top Bar -->
+            <div class="top-bar -mx-4 px-4 md:mx-0 md:px-0">
+                <!-- BEGIN: Breadcrumb -->
+                <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Application</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Schedule</li>
+                    </ol>
+                </nav>
+                <!-- END: Breadcrumb -->
+                <!-- BEGIN: Search -->
+                <div class="intro-x relative mr-3 sm:mr-6">
+                    <div class="search hidden sm:block">
+                        <input type="text" class="search__input form-control border-transparent"
+                            placeholder="Search...">
+                        <i data-lucide="search" class="search__icon dark:text-slate-500"></i>
+                    </div>
+                    <a class="notification sm:hidden" href="#"> <i data-lucide="search"
+                            class="notification__icon dark:text-slate-500"></i> </a>
+                    <div class="search-result">
+                        <div class="search-result__content">
+                            <div class="search-result__content__title">Pages</div>
+                            <div class="mb-5">
+                                <a href="#" class="flex items-center">
+                                    <div
+                                        class="w-8 h-8 bg-success/20 dark:bg-success/10 text-success flex items-center justify-center rounded-full">
+                                        <i class="w-4 h-4" data-lucide="inbox"></i>
+                                    </div>
+                                    <div class="ml-3">Mail Settings</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div
+                                        class="w-8 h-8 bg-pending/10 text-pending flex items-center justify-center rounded-full">
+                                        <i class="w-4 h-4" data-lucide="users"></i>
+                                    </div>
+                                    <div class="ml-3">Users & Permissions</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div
+                                        class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full">
+                                        <i class="w-4 h-4" data-lucide="credit-card"></i>
+                                    </div>
+                                    <div class="ml-3">Transactions Report</div>
+                                </a>
+                            </div>
+                            <div class="search-result__content__title">Users</div>
+                            <div class="mb-5">
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                            src="/static/dist/images/profile-9.jpg">
+                                    </div>
+                                    <div class="ml-3">Al Pacino</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        alpacino@left4code.com</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                            src="/static/dist/images/profile-1.jpg">
+                                    </div>
+                                    <div class="ml-3">Christian Bale</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        christianbale@left4code.com</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                            src="/static/dist/images/profile-14.jpg">
+                                    </div>
+                                    <div class="ml-3">Angelina Jolie</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        angelinajolie@left4code.com</div>
+                                </a>
+                                <a href="#" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                            src="/static/dist/images/profile-14.jpg">
+                                    </div>
+                                    <div class="ml-3">Sylvester Stallone</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">
+                                        sylvesterstallone@left4code.com</div>
+                                </a>
+                            </div>
+                            <div class="search-result__content__title">Products</div>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="/static/dist/images/preview-7.jpg">
+                                </div>
+                                <div class="ml-3">Nikon Z6</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Photography</div>
+                            </a>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="/static/dist/images/preview-11.jpg">
+                                </div>
+                                <div class="ml-3">Samsung Q90 QLED TV</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Electronic</div>
+                            </a>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="/static/dist/images/preview-8.jpg">
+                                </div>
+                                <div class="ml-3">Oppo Find X2 Pro</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Smartphone &amp;
+                                    Tablet</div>
+                            </a>
+                            <a href="#" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="/static/dist/images/preview-4.jpg">
+                                </div>
+                                <div class="ml-3">Sony Master Series A9G</div>
+                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Electronic</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Search -->
+                <!-- BEGIN: Notifications -->
+                <div class="intro-x dropdown mr-auto sm:mr-6">
+                    <div class="dropdown-toggle notification notification--bullet cursor-pointer" role="button"
+                        aria-expanded="false" data-tw-toggle="dropdown"> <i data-lucide="bell"
+                            class="notification__icon dark:text-slate-500"></i> </div>
+                    <div class="notification-content pt-2 dropdown-menu">
+                        <div class="notification-content__box dropdown-content">
+                            <div class="notification-content__title">Notifications</div>
+                            <div class="cursor-pointer relative flex items-center ">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="/static/dist/images/profile-9.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Al Pacino</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry. Lorem Ipsum has been the
+                                        industry&#039;s standard dummy text ever since the 1500</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="/static/dist/images/profile-1.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Christian Bale</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry. Lorem Ipsum has been the
+                                        industry&#039;s standard dummy text ever since the 1500</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="/static/dist/images/profile-14.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Angelina Jolie</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry. Lorem Ipsum has been the
+                                        industry&#039;s standard dummy text ever since the 1500</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="/static/dist/images/profile-14.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Sylvester Stallone</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Contrary to popular belief, Lorem
+                                        Ipsum is not simply random text. It has roots in a piece of classical Latin
+                                        literature from 45 BC, making it over 20</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="Midone - HTML Admin Template" class="rounded-full"
+                                        src="/static/dist/images/profile-10.jpg">
+                                    <div
+                                        class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600">
+                                    </div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">John Travolta</a>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry. Lorem Ipsum has been the
+                                        industry&#039;s standard dummy text ever since the 1500</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Notifications -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in"
+                        role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                        <img alt="Midone - HTML Admin Template" src="/static/dist/images/profile-11.jpg">
+                    </div>
+                    <div class="dropdown-menu w-56">
+                        <ul class="dropdown-content bg-primary text-white">
+                            <li class="p-2">
+                                <div class="font-medium">Al Pacino</div>
+                                <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">DevOps Engineer</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5"> <i data-lucide="user"
+                                        class="w-4 h-4 mr-2"></i> Profile </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5"> <i data-lucide="edit"
+                                        class="w-4 h-4 mr-2"></i> Add Account </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5"> <i data-lucide="lock"
+                                        class="w-4 h-4 mr-2"></i> Reset Password </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5"> <i data-lucide="help-circle"
+                                        class="w-4 h-4 mr-2"></i> Help </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-white/[0.08]">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item hover:bg-white/5"> <i data-lucide="toggle-right"
+                                        class="w-4 h-4 mr-2"></i> Logout </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+            <!-- END: Top Bar -->
+            <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
+                <h2 class="text-lg font-medium mr-auto">
+                    Calendar
+                </h2>
+                <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
+                    <button class="btn btn-primary shadow-md mr-2">Print Schedule</button>
+                    <div class="dropdown ml-auto sm:ml-0">
+                        <button class="dropdown-toggle btn px-2 box" aria-expanded="false" data-tw-toggle="dropdown">
+                            <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4"
+                                    data-lucide="plus"></i> </span>
+                        </button>
+                        <div class="dropdown-menu w-40">
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#" class="dropdown-item"> <i data-lucide="share-2"
+                                            class="w-4 h-4 mr-2"></i> Share </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item"> <i data-lucide="settings"
+                                            class="w-4 h-4 mr-2"></i> Settings </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-5 mt-5">
+                <!-- BEGIN: Calendar Side Menu -->
+                <div class="col-span-12 xl:col-span-4 2xl:col-span-3">
+                    <div class="box p-5 intro-y">
+                        <a href="/hospital/form/">
+                            <button type="button" class="btn btn-primary w-full mt-2"> <i class="w-4 h-4 mr-2"
+                                    data-lucide="edit-3"></i> Add New Appointment </button></a>
+                        <div class="border-t border-b border-slate-200/60 dark:border-darkmode-400 mt-6 mb-5 py-3 min-h-[250px]"
+                            id="calendar-events">
+                            <!-- <div class="relative">
+                                <div
+                                    class="event p-3 -mx-3 cursor-pointer transition duration-300 ease-in-out hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md flex items-center">
+                                    <div class="w-2 h-2 bg-pending rounded-full mr-3"></div>
+                                    <div class="pr-10">
+                                        <div class="event__title truncate">VueJS Amsterdam</div>
+                                        <div class="text-slate-500 text-xs mt-0.5"> <span class="event__days">2</span>
+                                            Days <span class="mx-1">•</span> 10:00 AM </div>
+                                    </div>
+                                </div>
+                                <a class="flex items-center absolute top-0 bottom-0 my-auto right-0" href="#"> <i
+                                        data-lucide="edit" class="w-4 h-4 text-slate-500"></i> </a>
+                            </div>
+                            <div class="relative">
+                                <div
+                                    class="event p-3 -mx-3 cursor-pointer transition duration-300 ease-in-out hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md flex items-center">
+                                    <div class="w-2 h-2 bg-pending rounded-full mr-3"></div>
+                                    <div class="pr-10">
+                                        <div class="event__title truncate">VueJS Amsterdam</div>
+                                        <div class="text-slate-500 text-xs mt-0.5"> <span class="event__days">2</span>
+                                            Days <span class="mx-1">•</span> 10:00 AM </div>
+                                    </div>
+                                </div>
+                                <a class="flex items-center absolute top-0 bottom-0 my-auto right-0" href="#"> <i
+                                        data-lucide="edit" class="w-4 h-4 text-slate-500"></i> </a>
+                            </div>
+                            <div class="relative">
+                                <div
+                                    class="event p-3 -mx-3 cursor-pointer transition duration-300 ease-in-out hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md flex items-center">
+                                    <div class="w-2 h-2 bg-pending rounded-full mr-3"></div>
+                                    <div class="pr-10">
+                                        <div class="event__title truncate">VueJS Amsterdam</div>
+                                        <div class="text-slate-500 text-xs mt-0.5"> <span class="event__days">2</span>
+                                            Days <span class="mx-1">•</span> 10:00 AM </div>
+                                    </div>
+                                </div>
+                                <a class="flex items-center absolute top-0 bottom-0 my-auto right-0" href="#"> <i
+                                        data-lucide="edit" class="w-4 h-4 text-slate-500"></i> </a>
+                            </div>
+                            <div class="relative">
+                                <div
+                                    class="event p-3 -mx-3 cursor-pointer transition duration-300 ease-in-out hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md flex items-center">
+                                    <div class="w-2 h-2 bg-warning rounded-full mr-3"></div>
+                                    <div class="pr-10">
+                                        <div class="event__title truncate">Vue Fes Japan 2019</div>
+                                        <div class="text-slate-500 text-xs mt-0.5"> <span class="event__days">3</span>
+                                            Days <span class="mx-1">•</span> 07:00 AM </div>
+                                    </div>
+                                </div>
+                                <a class="flex items-center absolute top-0 bottom-0 my-auto right-0" href="#"> <i
+                                        data-lucide="edit" class="w-4 h-4 text-slate-500"></i> </a>
+                            </div>
+                            <div class="relative">
+                                <div
+                                    class="event p-3 -mx-3 cursor-pointer transition duration-300 ease-in-out hover:bg-slate-100 dark:hover:bg-darkmode-400 rounded-md flex items-center">
+                                    <div class="w-2 h-2 bg-pending rounded-full mr-3"></div>
+                                    <div class="pr-10">
+                                        <div class="event__title truncate">Laracon 2021</div>
+                                        <div class="text-slate-500 text-xs mt-0.5"> <span class="event__days">4</span>
+                                            Days <span class="mx-1">•</span> 11:00 AM </div>
+                                    </div>
+                                </div>
+                                <a class="flex items-center absolute top-0 bottom-0 my-auto right-0" href="#"> <i
+                                        data-lucide="edit" class="w-4 h-4 text-slate-500"></i> </a>
+                            </div> -->
+                            <!-- <div class="text-slate-500 p-3 text-center" id="calendar-no-events">No events yet
+                            </div> -->
+                        </div>
+                        <!-- <div class="form-check form-switch flex">
+                            <label class="form-check-label" for="checkbox-events">Remove after drop</label>
+                            <input class="show-code form-check-input ml-auto" type="checkbox" id="checkbox-events">
+                        </div> -->
+                    </div>
+                    <div class="box p-5 intro-y mt-5">
+                        <div class="flex">
+                            <i data-lucide="chevron-left" class="w-5 h-5 text-slate-500 monthPrevNext"
+                                id="calendar-prev"></i>
+                            <div class="font-medium text-base mx-auto calendar-current-date"></div>
+                            <i data-lucide="chevron-right" class="w-5 h-5 text-slate-500 monthPrevNext"
+                                id="calendar-next"></i>
+                        </div>
+
+                        <div class="grid grid-cols-7 gap-4 mt-5 text-center">
+                            <div class="font-medium">Su</div>
+                            <div class="font-medium">Mo</div>
+                            <div class="font-medium">Tu</div>
+                            <div class="font-medium">We</div>
+                            <div class="font-medium">Th</div>
+                            <div class="font-medium">Fr</div>
+                            <div class="font-medium">Sa</div>
+                        </div>
+                        <div class="grid grid-cols-7 gap-4 mt-5 text-center calendar-dates">
+                            <!-- <div class="py-0.5 rounded relative text-slate-500">29</div>
+                            <div class="py-0.5 rounded relative text-slate-500">30</div>
+                            <div class="py-0.5 rounded relative text-slate-500">31</div>
+                            <div class="py-0.5 rounded relative">1</div>
+                            <div class="py-0.5 rounded relative">2</div>
+                            <div class="py-0.5 rounded relative">3</div>
+                            <div class="py-0.5 rounded relative">4</div>
+                            <div class="py-0.5 rounded relative">5</div>
+                            <div class="py-0.5 bg-success/20 dark:bg-success/30 rounded relative">6</div>
+                            <div class="py-0.5 rounded relative">7</div>
+                            <div class="py-0.5 bg-primary text-white rounded relative">8</div>
+                            <div class="py-0.5 rounded relative">9</div>
+                            <div class="py-0.5 rounded relative">10</div>
+                            <div class="py-0.5 rounded relative">11</div>
+                            <div class="py-0.5 rounded relative">12</div>
+                            <div class="py-0.5 rounded relative">13</div>
+                            <div class="py-0.5 rounded relative">14</div>
+                            <div class="py-0.5 rounded relative">15</div>
+                            <div class="py-0.5 rounded relative">16</div>
+                            <div class="py-0.5 rounded relative">17</div>
+                            <div class="py-0.5 rounded relative">18</div>
+                            <div class="py-0.5 rounded relative">19</div>
+                            <div class="py-0.5 rounded relative">20</div>
+                            <div class="py-0.5 rounded relative">21</div>
+                            <div class="py-0.5 rounded relative">22</div>
+                            <div class="py-0.5 bg-pending/20 dark:bg-pending/30 rounded relative">23</div>
+                            <div class="py-0.5 rounded relative">24</div>
+                            <div class="py-0.5 rounded relative">25</div>
+                            <div class="py-0.5 rounded relative">26</div>
+                            <div class="py-0.5 bg-primary/10 dark:bg-primary/50 rounded relative">27</div>
+                            <div class="py-0.5 rounded relative">28</div>
+                            <div class="py-0.5 rounded relative">29</div>
+                            <div class="py-0.5 rounded relative">30</div>
+                            <div class="py-0.5 rounded relative text-slate-500">1</div>
+                            <div class="py-0.5 rounded relative text-slate-500">2</div>
+                            <div class="py-0.5 rounded relative text-slate-500">3</div>
+                            <div class="py-0.5 rounded relative text-slate-500">4</div>
+                            <div class="py-0.5 rounded relative text-slate-500">5</div>
+                            <div class="py-0.5 rounded relative text-slate-500">6</div>
+                            <div class="py-0.5 rounded relative text-slate-500">7</div>
+                            <div class="py-0.5 rounded relative text-slate-500">8</div>
+                            <div class="py-0.5 rounded relative text-slate-500">9</div> -->
+                        </div>
+                        <div class="border-t border-slate-200/60 dark:border-darkmode-400 pt-5 mt-5">
+                            <div class="flex items-center mt-4">
+                                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                                <span class="truncate">Today</span>
+                                <div class="h-px flex-1 border border-r border-dashed border-slate-200 mx-3 xl:hidden">
+                                </div>
+                                <!-- <span class="font-medium xl:ml-auto">10th</span> -->
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-pending rounded-full mr-3"></div>
+                                <span class="truncate">Holiday</span>
+                                <div class="h-px flex-1 border border-r border-dashed border-slate-200 mx-3 xl:hidden">
+                                </div>
+                                <!-- <span class="font-medium xl:ml-auto">23th</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Calendar Side Menu -->
+                <!-- BEGIN: Calendar Content -->
+                <div class="col-span-12 xl:col-span-8 2xl:col-span-9">
+                    <div class="box p-5">
+                        <!-- <div class="full-calendar" id="calendar"></div> -->
+                        <div class="full-calendar" id="AppointmentCalendar"></div>
+                    </div>
+                </div>
+                <!-- END: Calendar Content -->
+            </div>
+        </div>
+        <!-- END: Content -->
+    </div>
+    <!-- BEGIN: Dark Mode Switcher-->
+    <!-- <div data-url="side-menu-dark-calendar.html"
+        class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box dark:bg-dark-2 border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+        <div class="mr-4 text-gray-700 dark:text-gray-300">Dark Mode</div>
+        <div class="dark-mode-switcher__toggle border"></div>
+    </div> -->
+    <!-- END: Dark Mode Switcher-->
+
+    <!-- BEGIN: JS Assets-->
+    <script
+        src="../developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script>
+    <script src="/static/dist/js/app.js"></script>
+    <!-- <script src="/static/dist/js/fc.global.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.9/index.global.min.js"></script>
+    <script src="/static/assets/js/script.js"></script>
+    <script>
+        const doctors = JSON.parse(` {{ doctors|safe }} `)
+        doctors.forEach((doctor) => {
+            console.log(doctor)
+        })
+        const appointments = JSON.parse(` {{ appointments| safe}} `)
+        appointments.forEach((appointment) => {
+            console.log(appointment)
+        })
+    </script>
+    <script src="/static/assets/js/appointmentCalendar.js"></script>
+    <!-- END: JS Assets-->
+</body>
+
+<!-- Mirrored from tinker-html.vercel.app/side-menu-light-calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Sep 2023 19:06:40 GMT -->
+
+
+</html>

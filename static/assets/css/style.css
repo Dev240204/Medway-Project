@@ -1,0 +1,11 @@
+.calendar-dates .today {
+  background-color: rgb(var(--color-success) / 0.2);
+}
+
+.calendar-dates .holiday {
+  background-color: rgb(var(--color-pending) / 0.2);
+}
+
+.calendar-dates div{
+  cursor: pointer;
+}
