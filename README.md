@@ -15,4 +15,4 @@ Medway is an efficient appointment scheduling algorithm for hospital management 
 
 - Backend: Django
 - Database: SQLite
-- Frontend: Bootstrap and Vanilla JavaScript
+- Frontend: Tailwind CSS and Vanilla JavaScript
